@@ -10,12 +10,20 @@ def saludo(request):
 
 
 def saludar_con_html(request):
-    contexto = {
-        "usuario": "Pedro"
-    }
+    contexto = { }
     http_responde = render(
         request=request,
         template_name='proyecto_cargas/base.html',
         context=contexto,
+    )
+    return http_responde
+
+def inicio (request):
+    contexto = {}
+    
+    http_responde= render(
+        request=request,
+        template_name= 'proyecto_cargas/index.html',
+        context = contexto,
     )
     return http_responde

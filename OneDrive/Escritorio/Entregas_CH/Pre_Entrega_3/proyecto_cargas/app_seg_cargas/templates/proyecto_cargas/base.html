@@ -23,10 +23,10 @@
         <nav class="navbar navbar-light bg-light static-top">
             <div class="container">
                 <a class="navbar-brand" href="https://google.com">Google</a> 
-                <a class="navbar-brand" href="">Inicio</a>
-                <a class="navbar-brand" href="">Usuarios</a>
-                <a class="navbar-brand" href="">Guias aereas</a>
-                <a class="navbar-brand" href="">Forwarders</a>
+                <a class="navbar-brand" href={% url 'Inicio' %}>Inicio</a>
+                <a class="navbar-brand" href={% url 'Inicio' %}>Usuarios</a>
+                <a class="navbar-brand" href={% url 'Inicio' %}>Guias aereas</a>
+                <a class="navbar-brand" href={% url 'Inicio' %}>Forwarders</a>
                 <a class="btn btn-primary" href="#signup">Registro</a>
             </div>
         </nav>
@@ -47,7 +47,7 @@
                             <li class="list-inline-item"><a href="#!">Contacto</a></li>
                       
                         </ul>
-                        <p class="text-muted small mb-4 mb-lg-0">&copy; Curso de Python - Mario Gorostegui.</p>
+                        <p class="text-muted small mb-4 mb-lg-0">&copy; Sistema de control de cargas - Mario Gorostegui.</p>
                     </div>
                     <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
                         <ul class="list-inline mb-0">
