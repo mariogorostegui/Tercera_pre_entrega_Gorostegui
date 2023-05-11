@@ -1,0 +1,16 @@
+{% extends 'proyecto_cargas/base.html' %}
+
+{% block contenido %}
+
+<section>
+    <div>
+      <h1>Lista de Usuarios</h1>
+      <ul>
+      {% for users in usuarios %}
+        <li>{{ users.nombre }} {{ users.apellido }}  - Area: {{users.area}}</li>
+      {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+{% endblock contenido %}

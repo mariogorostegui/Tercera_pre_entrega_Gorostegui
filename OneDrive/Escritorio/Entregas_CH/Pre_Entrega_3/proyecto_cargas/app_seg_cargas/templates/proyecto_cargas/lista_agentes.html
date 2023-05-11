@@ -1,0 +1,16 @@
+{% extends 'proyecto_cargas/base.html' %}
+
+{% block contenido %}
+
+<section>
+    <div>
+      <h1>Lista de Forwarders</h1>
+      <ul>
+      {% for fwr in agentes %}
+        <li>{{ fwr.nombre_fwr }} {{ fwr.abrev_fwr }}  - Contacto: {{fwr.ctc_fwr}}</li>
+      {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+{% endblock contenido %}
