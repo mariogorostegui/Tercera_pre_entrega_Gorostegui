@@ -1,0 +1,20 @@
+{% extends 'proyecto_cargas/base.html' %}
+
+{% block contenido %}
+
+<section>
+    <div>
+      <h1>Lista de Cargas</h1>
+      <ul>
+      <br>
+      <a href="{% url "buscar_fwr" %}">Buscar por Forwarder</a>
+      <br>
+      <br>
+      {% for shp in shipments %}
+        <li>{{ shp.mawb }} {{ shp.hawb }} {{shp.abrev_fwr}}  {{shp.ata}} {{shp.estado}}</li>
+      {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+{% endblock contenido %}

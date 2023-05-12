@@ -1,0 +1,10 @@
+{% extends "proyecto_cargas/base.html" %}
+
+{% block contenido %}
+<form action="{% url 'buscar_fwr' %}" method="post">
+  {% csrf_token %}
+  {{ formulario.as_p }}
+  {{ formulario.errors }}
+  <input type="submit" value="Enviar" />
+</form>
+{% endblock contenido %}

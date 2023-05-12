@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include  
 
-from proyecto_cargas.views import saludo, saludar_con_html,inicio,lista_usuarios,lista_agentes
+from proyecto_cargas.views import saludo, saludar_con_html,inicio,lista_usuarios,lista_agentes,lista_guias,crear_usuario,buscar_fwr
 
 
 urlpatterns = [
@@ -27,4 +27,7 @@ urlpatterns = [
     path('saludar/', saludar_con_html),    
     path('lst_usuarios/',lista_usuarios,name="Usuarios"),
     path('lst_agentes/',lista_agentes,name="Agentes"),
+    path('lst_cargas/',lista_guias,name="Cargas"),
+    path('crear-usuario/',crear_usuario,name="crear_usuario"),
+    path("buscar-cargas/", buscar_fwr, name="buscar_fwr"),
 ]
